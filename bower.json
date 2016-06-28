@@ -1,9 +1,11 @@
 {
   "name": "webhomework1",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "font-awesome": "fontawesome#^4.6.3"
   }
 }

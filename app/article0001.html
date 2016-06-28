@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+
+{% block title %}Gulp 简介{% endblock %}
+
+{% block styles %}
+<!-- build:css styles/article.css -->
+<link rel="stylesheet" href="styles/article.css">
+<!-- endbuild -->
+{% endblock %}
+
+{% block content %}
+
+<div id="article">
+  <div id="title">
+    Gulp 简介
+  </div>
+  <hr>
+  <div id="content">
+    <p>
+      Gulp.js 是一款流式前端构建工具，其使用流程也是十分的简单易懂，下面我们简单介绍一下如何使用Gulp。
+    </p>
+    <p>
+    <h4 id="install-gulp-globally">1. 全局安装Gulp：</h4>
+    <p><strong>如果你之前已经安装过Gulp的话，请运行
+      <code>npm rm --global gulp</code>
+      来确保老版本的Gulp已经被删除。</strong></p>
+    <pre class="sh"><code>$ npm install --global gulp-cli</code></pre>
+    <h4 id="initialize-your-project-directory">2. 初始化你项目</h4>
+    <pre class="sh"><code>$ npm init</code></pre>
+    <h4 id="install-gulp-in-your-project-devdependencies">3. 作为项目的devDependencies安装Gulp</h4>
+    <pre class="sh"><code>$ npm install --save-dev gulp</code></pre>
+    <h4 id="create-a-gulpfile.js-at-the-root-of-your-project">4. 在你项目的根目录创建一个 <code>gulpfile.js</code>:</h4>
+    <pre>
+      var gulp = require(&#39;gulp&#39;);
+        gulp.task(&#39;default&#39;, function() {
+        // code here
+      });</pre>
+    <h4 id="run-gulp">5. 运行Gulp:</h4>
+    <pre class="sh"><code>$ gulp</code></pre>
+
+    </p>
+  </div>
+</div>
+{% endblock %}

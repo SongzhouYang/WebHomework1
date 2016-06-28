@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+
+{% block title %}Yeoman 简介{% endblock %}
+
+{% block styles %}
+<!-- build:css styles/article.css -->
+<link rel="stylesheet" href="styles/article.css">
+<!-- endbuild -->
+{% endblock %}
+
+{% block content %}
+
+<div id="article">
+  <div id="title">
+    Yeoman 简介
+  </div>
+  <hr>
+  <div id="content">
+    <p>Yeoman其实是一些工具的的集合：</p>
+    <p>· Yo：Yeoman的核心工具，用来创建项目目录和依赖。</p>
+    <p>· Grunt/Gulp：前端流式架构工具。（PS：Grunt已被Gulp取代）</p>
+    <p>· Bower/npm：包管理工具。（PS：bower已经逐渐在被npm替代）</p>
+    <p>最开始的Yeoman是由Yo，Grunt，Bower三部分组成，但是在后续的发展中，
+      Grunt和Bower正在渐渐被淘汰，但是这并不影响Yeoman成为最受欢迎的前端脚手架工具。</p>
+    <p>Yeoman功能之强大很难在一篇日志中说明清楚，更详细的内容也许会写在后续日志之中。（？</p>
+  </div>
+</div>
+{% endblock %}

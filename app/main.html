@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>{% block title %}{% endblock %}</title>
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  {% block head %}{% endblock %}
+  {% block styles %}{% endblock %}
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div id="container">
+  <div id="aside">
+    <canvas id="canvas"></canvas>
+    <div>
+      <a href="index.html"><img src="images/avatar.jpg" alt="Avatar" id="avatar"></a>
+      <div id="name"><a href="index.html">Yang Songzhou</a></div>
+      <div id="logos">
+        <a href="http://www.github.com/SongzhouYang" target="_blank">
+          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:yangsongzhou.tsinghu@gmail.com">
+          <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://plus.google.com/103550326844244727650" target="_blank">
+          <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+    {% block content %}{% endblock %}
+    <div id="footer">
+      © 2016 Songzhou Yang
+    </div>
+  </div>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/background.js"></script>
+<!-- endbuild -->
+
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,38 @@
+{% extends 'main.html' %}
+
+{% block title %}SCSS 简介{% endblock %}
+
+{% block styles %}
+<!-- build:css styles/article.css -->
+<link rel="stylesheet" href="styles/article.css">
+<!-- endbuild -->
+{% endblock %}
+
+{% block content %}
+
+<div id="article">
+  <div id="title">
+    SCSS 简介
+  </div>
+  <hr>
+  <div id="content">
+    <h3>什么是Scss？</h3>
+    <p>Scss是css的拓展，在css的基础之上加入了变量，导入，嵌套等等功能。</p>
+    <h3>基本语法：</h3>
+    <p>相比较CSS3，Scss增加了很多特性，由于篇幅我们只简要介绍几个：</p>
+    <h4>变量</h4>
+    <p>Scss使用 <code>$</code> 来定义变量，支持数字、字符串、布尔值、字体、颜色等等。</p>
+    <pre>
+      $font:  sans-serif;
+      $color:  #563D7C;
+      * {
+          font:  16px $font;
+          color:  $color;
+      }</pre>
+    <h4>导入</h4>
+    <p>可以使用 <code>@import "url"</code> 来导入另一个文件中的样式。</p>
+    <h4>嵌套</h4>
+    <p>提供了相比CSS更为直观的嵌套结构。</p>
+  </div>
+</div>
+{% endblock %}
