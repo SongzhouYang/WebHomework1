@@ -1,0 +1,10 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><link rel="icon" href="favicon.ico" type="image/x-icon"><title>SCSS 简介</title><!-- Place favicon.ico in the root directory --><link rel="stylesheet" href="styles/main.css"><link rel="stylesheet" href="styles/article.css"></head><body><!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]--><div id="container"><div id="aside"><canvas id="canvas"></canvas><div><a href="index.html"><img src="images/avatar.jpg" alt="Avatar" id="avatar"></a><div id="name"><a href="index.html">Yang Songzhou</a></div><div id="logos"><a href="http://www.github.com/SongzhouYang" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i> </a><a href="mailto:yangsongzhou.tsinghu@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> </a><a href="https://plus.google.com/103550326844244727650" target="_blank"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a></div></div></div><div id="main"><div id="article"><div id="title">SCSS 简介</div><hr><div id="content"><h3>什么是Scss？</h3><p>Scss是css的拓展，在css的基础之上加入了变量，导入，嵌套等等功能。</p><h3>基本语法：</h3><p>相比较CSS3，Scss增加了很多特性，由于篇幅我们只简要介绍几个：</p><h4>变量</h4><p>Scss使用 <code>$</code> 来定义变量，支持数字、字符串、布尔值、字体、颜色等等。</p><pre>
+      $font:  sans-serif;
+      $color:  #563D7C;
+      * {
+          font:  16px $font;
+          color:  $color;
+      }</pre><h4>导入</h4><p>可以使用 <code>@import "url"</code> 来导入另一个文件中的样式。</p><h4>嵌套</h4><p>提供了相比CSS更为直观的嵌套结构。</p></div></div><div id="footer">© 2016 Songzhou Yang</div></div></div><script src="scripts/main.js"></script></body></html>
